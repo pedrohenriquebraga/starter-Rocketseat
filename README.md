@@ -12,15 +12,15 @@ Nesse repositório você encontrará o curso completo, incluindo todas os arquiv
 O curso é dividido é sub-divido em outros 5 cursos sendo eles:
 
 1. JavaScript
-  - Introdução ao JavaScript
-  - Manipulação da DOM
-  - APP de Todos
-  - JS Assíncrono
+    - Introdução ao JavaScript
+    - Manipulação da DOM
+    - APP de Todos
+    - JS Assíncrono
 2. JavaScript ES6
-  - Conceitos
-  - WebPack Server
-  - Async/Await
-  - Aplicação com ES6+
+    - Conceitos
+    - WebPack Server
+    - Async/Await
+    - Aplicação com ES6+
 3. NodeJs
 4. ReactJS
 5. React Native
