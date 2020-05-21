@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas com JavaScript</title>
+</head>
+
+<body>
+    <ul></ul>
+
+    <script>
+        var names = ['Diego', 'Gabriel', 'Lucas']
+        var list = document.querySelector('ul')
+
+        for (name in names) {
+            var item = document.createElement('li')
+            item.innerText = names[name]
+            console.log(item)
+            list.appendChild(item)
+        }
+
+    </script>
+</body>
+
+</html>

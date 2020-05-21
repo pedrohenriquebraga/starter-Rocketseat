@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicío 01</title>
+</head>
+<body>
+    <button class="botao">Me Pressione</button>
+    <div class="squareRed"></div>
+    <script>
+        var btnElement = document.querySelector('.botao')
+        var squareElement = document.querySelector('.squareRed')
+        btnElement.onclick = function() {
+            squareElement.style.width = '100px'
+            squareElement.style.height = '100px'
+            squareElement.style.backgroundColor = 'red'
+            
+        }
+    </script>
+</body>
+</html>

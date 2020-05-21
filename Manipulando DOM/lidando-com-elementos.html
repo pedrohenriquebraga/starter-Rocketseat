@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando a DOM</title>
+</head>
+<body>
+    <div id="app">
+        <input id="nome">
+    </div>
+
+    <script>
+        var linkElement = document.createElement('a')
+        linkElement.setAttribute('href', 'https://youtube.com/gamesantos')
+        linkElement.setAttribute('title', 'Meu Canal')
+
+        var textElement = document.createTextNode('Acessar Meu Canal do YouTube')
+        linkElement.appendChild(textElement)
+
+        var containerElement = document.getElementById('app')
+        containerElement.appendChild(linkElement)
+
+        var inputElement = document.querySelector('#nome')
+        containerElement.removeChild(inputElement)
+
+    </script>
+</body>
+</html>

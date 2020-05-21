@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicío 01</title>
+</head>
+<body>
+    <button class="botao">Me Pressione</button>
+    <div class="squareRed"></div>
+    <script>
+        function getRandomColor() {
+            var letters = '01234567ABCDEF'
+            var color = '#'
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)]
+            }
+            return color
+        }
+        var btnElement = document.querySelector('.botao')
+        var squareElement = document.querySelector('.squareRed')
+        btnElement.onclick = function() {
+            squareElement.style.width = '100px'
+            squareElement.style.height = '100px'
+            squareElement.style.backgroundColor = 'red'
+            
+        }
+
+        squareElement.onmouseover = function() {
+            var newColor = getRandomColor()
+            squareElement.style.backgroundColor = newColor
+        }
+    </script>
+</body>
+</html>

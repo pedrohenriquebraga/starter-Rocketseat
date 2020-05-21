@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas com JavaScript</title>
+</head>
+
+<body onload="viewNames()">
+    <input type="text" id="newName" placeholder="Adicione nomes...">
+    <button onclick="addNewName()">Adicionar</button>
+    <ul></ul>
+
+    <script>
+        var names = ['Diego', 'Gabriel', 'Lucas']
+        var list = document.querySelector('ul')
+        
+        function viewNames() {
+            for (name in names) {
+                var item = document.createElement('li')
+                item.innerText = names[name]
+                list.appendChild(item)
+            }
+
+        }
+        function addNewName() {
+            list.innerText = ''
+            var newName = document.querySelector('#newName')
+            names.push(newName.value)
+            newName.value = ''
+            newName.focus() 
+            viewNames()
+        }
+        
+    </script>
+</body>
+
+</html>
